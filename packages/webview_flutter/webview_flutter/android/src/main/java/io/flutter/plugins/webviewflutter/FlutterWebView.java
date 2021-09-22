@@ -177,6 +177,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
             true) // Always allow automatically opening of windows.
         .setSupportMultipleWindows(true) // Always support multiple windows.
         .setWebChromeClient(webChromeClient)
+        .setUseWideViewPort(true);
         .setDownloadListener(
             downloadListener); // Always use {@link FlutterWebChromeClient} as web Chrome client.
 
